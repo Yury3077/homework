@@ -15,5 +15,3 @@ def test_negative_case():
 def test_with_one_number():
     """Testing that sequence i'snt a Fibonacci sequence because has only one number"""
     assert not check_fibonacci([17])
-
-

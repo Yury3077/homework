@@ -3,7 +3,7 @@ from Tasks02_05.task04 import check_sum_of_four
 
 
 def test_equal_values():
-    """Testing that function calculates combination in lists with numbers that give zero"""
+    """Testing that function calculates combination in lists numbers that give zero"""
     l1 = [1, -2, 4, -5, 9]
     l2 = [1, -4, -6, 11, 10]
     l3 = [-4, 7, -2, 11, 1]

@@ -2,7 +2,7 @@ import pytest
 from Tasks02_05.task04 import check_sum_of_four
 
 
-def test_equal_values():
+def test_check_sum_of_four_nums_from_list_give_zero():
     """Testing that function calculates combination in lists numbers that give zero"""
     l1 = [1, -2, 4, -5, 9]
     l2 = [1, -4, -6, 11, 10]

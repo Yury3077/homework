@@ -1,1 +1,6 @@
 pytest
+pytest-sugar
+math
+typing
+itertools
+string

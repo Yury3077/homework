@@ -1,4 +1,5 @@
 import pytest
+
 from Tasks02_05.task04 import check_sum_of_four
 
 

@@ -13,4 +13,5 @@ def check_power_of_2(a: int) -> bool:
 
     return not (bool(a == 0 or (a & (a - 1))))
 
+
 print(check_power_of_2(-1))

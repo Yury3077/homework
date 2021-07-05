@@ -9,8 +9,8 @@ Examples:
     nums = [1, 3, -1, -3, 5, 3, 6, 7], k = 3
     result = 16
 """
-from typing import List
 from math import inf
+from typing import List
 
 
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
@@ -23,7 +23,7 @@ def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     max_value = -inf
     for j in range(len(nums)):
         for i in range(k):
-            sum_sub_list = sum(nums[j:j + i + 1])
+            sum_sub_list = sum(nums[j : j + i + 1])
             if sum_sub_list >= max_value:
                 max_value = sum_sub_list
     return max_value

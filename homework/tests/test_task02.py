@@ -1,6 +1,4 @@
-import pytest
-
-from Tasks02_05.task02 import check_fibonacci
+from homework.Tasks02_05.task02 import check_fibonacci
 
 
 def test_positive_case():

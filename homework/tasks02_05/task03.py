@@ -22,7 +22,7 @@ def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
     read a file line by line that consists of str
     str include numbers (separated with commas)
     :param file_name: name of file + .txt
-    :return: Tuple(min_value, max_value) for each line
+    :return: min_value, max_value in file
     """
     list_result = []
     with open(file_name) as fi:

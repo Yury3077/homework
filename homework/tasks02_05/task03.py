@@ -24,18 +24,17 @@ def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
     :param file_name: name of file + .txt
     :return: min_value, max_value in file
     """
-    list_result = []
+    min_num = math.inf
+    max_num = -math.inf
     with open(file_name) as fi:
         for line in fi:
             line_split = line.split(",")
-            min_num = math.inf
-            max_num = -math.inf
             for char in line_split:
                 char = int(char)
                 if char <= min_num:
                     min_num = char
                 if char >= max_num:
                     max_num = char
-            result_tuple = (min_num, max_num)
-            list_result.append(result_tuple)
-    return list_result
+    result_tuple = (min_num, max_num)
+
+    return result_tuple

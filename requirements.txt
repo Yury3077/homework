@@ -1,8 +1,2 @@
 pytest
 pytest-sugar
-math
-typing
-itertools
-string
-os
-time

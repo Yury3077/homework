@@ -54,13 +54,16 @@ class Homework:
 
     def __init__(self, text: str, deadline: int):
         self.text = text
-        self.deadline = deadline
+        self.deadline = datetime.timedelta(days=deadline)
         self.created = datetime.datetime.now()
 
     def is_active(self) -> bool:
         """Checking if task in active, return True/False"""
         dead_line = self.deadline + datetime.datetime.now()
-        return False if dead_line > datetime.datetime.now() else True
+        if dead_line > datetime.datetime.now():
+            return False
+        else:
+            return True
 
 
 class Student:
@@ -93,11 +96,10 @@ class Teacher:
         self.last_name = last_name
         self.first_name = first_name
 
-    def create_homework(self, text: str, days: int) -> object:
+    @staticmethod
+    def create_homework(text: str, days: int) -> object:
         """Create an instance of Homework"""
-        deadline = datetime.timedelta(days=days)
-        home_task = Homework(text, deadline)
-        return home_task
+        return Homework(text, days)
 
 
 # if __name__ == '__main__':      # специально не тер этот код, так как он был в проекте изначально

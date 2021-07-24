@@ -21,3 +21,4 @@ jobs:
           isort --check .
           pytest --pyargs homework
           pytest --pyargs sample_project
+          pytest --pyargs homework6

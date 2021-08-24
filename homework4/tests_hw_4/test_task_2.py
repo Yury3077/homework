@@ -7,9 +7,8 @@ from homework4.task_2_mock_input import count_dots_on_i
 
 
 class FetchTests(TestCase):
-    """Checking that function return true value of i in a text"""
-
     def test_returns_true_if_url_text_contain_4_i(self):
+        """Checking that function return true value of i in a text"""
         with patch("requests.get") as mock_request:
             url = "http://google.com"
             mock_request.return_value.text = "iiii"
